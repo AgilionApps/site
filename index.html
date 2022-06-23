@@ -13,6 +13,11 @@
     <link rel="shortcut icon" type="image/png" href="assets/agilion-favicon.png"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <!-- Start of Async Drift Code -->
+    <style>
+      html, body {
+        background-color: oldlace;
+      }
+    </style>
     <script>
     "use strict";
 
@@ -43,41 +48,45 @@
   </head>
   <body>
     <section class="section">
-      <div class="notification is-link content" id="notificationContainer">
-        <button class="delete" id="hideButton"></button>
-        <p>Dear Reader,<p>
-        <p>Thank you for visiting.</p>
-        <p>My name is <a href="https://adambouchard.com" target="_blank">Adam</a> and I am creating a collection of small web applications for personal use.  These tools help me prioritize and stay accountable to make progress in areas I choose.</p> 
-        <p>I am seeking a few people who I can share them with and gain some feedback.</p>
-        <p>If you are curious, or want to be notified as these tools become available publicly, then please use the chat bot below to get in touch.</p>
-        <p>Regards,</p>
-        <p>Adam</p>    
-        </p>
-      </div>
       <div class="container content has-text-centered">
         <img src="assets/logo.png" width="150px" />
-        <h1 class="title">
-          A few simple tools
-        </h1>
-        <p class="subtitle">
-         Easy applications that help you prioritize and communicate what is important
-        </p>
-        <ul class="mt-5" style="list-style-type: none;">
-          <li><b>Long Game</b> - Clarify your vision</li>
-          <li><b>Skill Log</b> - Track and grow your competencies</li>
-          <li><b>Outcome Log</b> - Effective goal planning</li>
-          <li><b>Action Log</b> - Track what you do and learn from it</li>
-          <li><b>Idea Log</b> - Framework to track your ideas</li>
-          <li><b>Financial Clarity</b> - A simple view of your finances</li>
-          <li><b>Trustee</b> - Securely share and iterate important plans</li>
-          <li><b>Less Inventory</b> - Intentional organization of stuff</li>
-        </ul>
+        <p class="mt-1">by <a href="https://adambouchard.com">Adam Bouchard</a></p>
       </div>
     </section>
-    <script type="text/javascript">
-      document.getElementById("hideButton").onclick = function() {
-          document.getElementById("notificationContainer").style.display = "none";
-      }
-    </script>
+    <section class="section">
+      <div class="container columns">
+        <div class="column">
+          <h2 class="has-text-centered is-uppercase">Products</h2>
+
+          <div class="card p-5 m-5 is-clickable" onclick="window.location.href='https://www.inboxtel.co/'">
+            <p class="is-uppercase"><b>Inboxtel</b></p>
+            <p>Simplify your search for building project leads in NYC</p>
+          </div>
+
+          <div class="card p-5 m-5 is-clickable" onclick="window.location.href='https://opportunityiq.co/'">
+            <p class="is-uppercase"><b>Opportunity IQ</b></p>
+            <p>Sales CRM with intelligently ranked opportunities.</p>
+          </div>
+
+        </div>
+        <div class="column">
+          <h2 class="has-text-centered is-uppercase">Active contracts</h2>
+          <div class="card p-5 m-5 is-clickable" onclick="window.location.href='https://www.easelearning.com/skillways'">
+            <p class="is-uppercase"><b>Skillways</b></p>
+            <p>Skill development and insights for lifelong learners.</p>
+          </div>
+
+          <div class="card p-5 m-5 is-clickable" onclick="window.location.href='https://www.selectdesign.com/brandhub/'">
+            <p class="is-uppercase"><b>Brandhub</b></p>
+            <p>Brilliant retail marketing execution made simple.</p>
+          </div>
+        </div>
+        <!-- <div class="column">
+          <h2 class="has-text-centered is-uppercase">Recent Articles</h2>
+          
+        </div> -->
+      </div>
+    </section>
+
   </body>
 </html>
