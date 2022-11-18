@@ -12,81 +12,83 @@
     <title>Agilion</title>
     <link rel="shortcut icon" type="image/png" href="assets/agilion-favicon.png"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <!-- Start of Async Drift Code -->
     <style>
       html, body {
-        background-color: oldlace;
+        background-color:  rgb(255, 249, 245);
+        font-family: Tahoma, sans-serif;
       }
     </style>
-    <script>
-    "use strict";
-
-    !function() {
-      var t = window.driftt = window.drift = window.driftt || [];
-      if (!t.init) {
-        if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-        t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-        t.factory = function(e) {
-          return function() {
-            var n = Array.prototype.slice.call(arguments);
-            return n.unshift(e), t.push(n), t;
-          };
-        }, t.methods.forEach(function(e) {
-          t[e] = t.factory(e);
-        }), t.load = function(t) {
-          var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
-          o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-          var i = document.getElementsByTagName("script")[0];
-          i.parentNode.insertBefore(o, i);
-        };
-      }
-    }();
-    drift.SNIPPET_VERSION = '0.3.1';
-    drift.load('fpf35id7nn93');
-   </script>
-   <!-- End of Async Drift Code -->
   </head>
   <body>
     <section class="section">
       <div class="container content has-text-centered">
         <img src="assets/logo.png" width="150px" />
-        <p class="mt-1">by <a href="https://adambouchard.com">Adam Bouchard</a></p>
+        <p class="mt-1">a.k.a<br/> <a href="https://adambouchard.com">Adam Bouchard</a></p>
       </div>
     </section>
     <section class="section">
-      <div class="container columns">
-        <div class="column">
-          <h2 class="has-text-centered is-uppercase">Products</h2>
-
-          <div class="card p-5 m-5 is-clickable" onclick="window.location.href='https://www.inboxtel.co/'">
-            <p class="is-uppercase"><b>Inboxtel</b></p>
-            <p>Simplify your search for building project leads in NYC</p>
-          </div>
-
-          <div class="card p-5 m-5 is-clickable" onclick="window.location.href='https://opportunityiq.co/'">
-            <p class="is-uppercase"><b>Opportunity IQ</b></p>
-            <p>Sales CRM with intelligently ranked opportunities.</p>
-          </div>
-
-        </div>
-        <div class="column">
-          <h2 class="has-text-centered is-uppercase">Active contracts</h2>
-          <div class="card p-5 m-5 is-clickable" onclick="window.location.href='https://www.easelearning.com/skillways'">
-            <p class="is-uppercase"><b>Skillways</b></p>
-            <p>Skill development and insights for lifelong learners.</p>
-          </div>
-
-          <div class="card p-5 m-5 is-clickable" onclick="window.location.href='https://www.selectdesign.com/brandhub/'">
-            <p class="is-uppercase"><b>Brandhub</b></p>
-            <p>Brilliant retail marketing execution made simple.</p>
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-one-third">
+            <div
+              class="card p-5 m-5 is-clickable has-text-centered"
+              onclick="window.location.href='https://inspirehq.team/'"
+            >
+              <img src="assets/InspireHQ.png" width="150px" title="InspireHQ" aria-label="InspireHQ" />
+              <p class="title is-uppercase is-size-7">Clarity. Coordination. Conviction</p>
+            </div>
           </div>
         </div>
-        <!-- <div class="column">
-          <h2 class="has-text-centered is-uppercase">Recent Articles</h2>
-          
-        </div> -->
       </div>
     </section>
+    <section class="section">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-half content has-text-centered">
+            <h2 class="is-uppercase">with gratitude</h2>
+            <p class="mt-5">We no longer offer contract development services.</p>
+            <p>A special thank you to clients, partners, employees and friends who've been involved with Agilion over the years.</p>
+            <p class="mt-5">selected project</p>
+            <div class="columns is-multiline is-centered mt-5" id="linkContainer"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      const linkContainer = document.getElementById('linkContainer');
+      const links = [
+        {name: 'Flatfile', logo: '', url: 'https://flatfile.com/'},  
+        {name: 'Skillways', logo: '', url: 'https://www.easelearning.com/skillways'},
+        {name: 'Brandhub', logo: '', url: 'https://www.selectdesign.com/brandhub/'},
+        {name: 'Inboxtel', logo: '', url: 'https://inboxtel.co/'},
+        {name: 'OppIQ', logo: '', url: 'https://opportunityiq.co/'},
+        {name: 'Mercatus', logo: '', url: ''},  
+        {name: 'Flow', logo: '', url: ''},
+        {name: 'Wishbone', logo: '', url: ''},
+        {name: 'Steepster', logo: '', url: ''},
+        {name: 'Venture Co', logo: '', url: ''},
+        {name: 'Pwnie Express', logo: '', url: ''},
+        {name: 'Mediator Resources', logo: '', url: ''},
+        {name: 'Sunovision', logo: '', url: ''},
+        {name: 'Companio', logo: '', url: ''},
+        {name: 'Collins Aerospace', logo: '', url: ''},
+        {name: 'KnowledgeWave', logo: '', url: ''},
+        {name: 'Fentrend', logo: '', url: ''},
+        {name: 'Draker', logo: '', url: ''},
+        {name: 'Notabli', logo: '', url: ''},
+        {name: 'Aprexis', logo: '', url: ''},
+        {name: 'Buyside FX', logo: '', url: ''},
+        {name: 'Solel Solutions', logo: '', url: ''},
+        {name: 'Sweetstakes', logo: '', url: ''},
+        {name: 'Compliance Canary', logo: '', url: ''},
+      ]
+      let linkReferences = ''
+      links.forEach(function (i) {
+        // linkReferences += `<div class="column is-half p-5"><a href="${i.url}" target="_blank" class="is-uppercase">${i.name}</a></div>`
+        linkReferences += `<div class="column is-half p-5"><span class="is-uppercase">${i.name}</span></div>`
 
+      });
+      linkContainer.innerHTML = linkReferences
+    </script>
   </body>
 </html>
